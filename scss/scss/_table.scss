@@ -1,0 +1,5 @@
+@import "mixins/_table.scss";
+
+table {
+  @include table($border_all,$trHover_table,$color_thead,$bgColor_thead,$border_bot_thead,$border_top_thead,$border_right_thead,$border_left_thead);
+}

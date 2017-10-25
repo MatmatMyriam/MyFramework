@@ -1,0 +1,60 @@
+/**
+*Typo
+ */
+$color_title : black §default;
+$fontfamily_title :'Helvetica', sans-serif;
+$fontfamily_pre: 'Arial';
+$style_quote:italic;
+$color_quote:gray;
+$color_del:darkred;
+$color_ins:#261e85;
+/**
+*Les tables
+ */
+$border_all:1.4px solid gray;
+$color_thead:#04313d;
+$bgColor_thead:#fff;
+$border_bot_thead:2.8px solid #485c80;
+$border_top_thead:2.8px solid #485c80;
+$border_left_thead:2.8px solid #485c80;
+$border_right_thead:2.8px solid #485c80;
+$border_BordureTable: 1.4px solid #8097d0;
+$bgColor_lign :#e4edff;
+$color_caption:gray;
+$size_caption: 2.8em;
+$trHover_table:#e4edff;
+
+/*
+* Les boutons
+ */
+$fonSize_btn :1.2rem;
+$background_btn:#0080D0;
+$color_btn : #fff;
+$border_btn :1px solid #067790;
+$borderRadius_btn:10px;
+$padding_btn:1% 2%;
+$lineHeight_btn:130%;
+$background_hover_btn:#0050D0;
+$background_active_btn:#0020D0 ;
+
+/**
+* les alertes
+ */
+$margin_alert: 2% 1%;
+$color_alert:#fff;
+$borderRadius_alert:4px;
+$background_alert:#067790;
+$boxShadow_alert:2px 5px rgba(0, 0, 0, 0.2);
+$backgroundHover_alert:#056378;
+
+/**
+* La navbar
+ */
+$width_navbar:90%;
+$margin_navbar:0 5%;
+$backgroung_navbar:skyblue;
+$hoverLi_navbar:#e4edff ;
+$disableLi_navebar:darkslategray;
+$backgroundActive_navbar:#084f61;
+$colorA_navbar:white;
+$hoverA_navbar:#e4edff ;

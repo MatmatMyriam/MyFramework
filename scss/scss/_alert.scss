@@ -1,0 +1,27 @@
+@import "mixins/_alert.scss";
+
+%alert{
+   @include alert($margin_alert,$color_alert,$borderRadius_alert, #067790,$boxShadow_alert,#056378)
+ }
+%alert_danger{
+  @include alert($margin_alert,$color_alert,$borderRadius_alert,#f44336,$boxShadow_alert,#f32c1e)
+
+}
+%alert_success{
+  @include alert($margin_alert,$color_alert,$borderRadius_alert, #006700,$boxShadow_alert,#004e00)
+
+}
+%alert_warning {
+  @include alert($margin_alert, $color_alert, $borderRadius_alert, orangered, $boxShadow_alert, #e63e00)
+}
+%closebtn {
+  color: white;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: bold;
+
+  float: right;
+  margin-left: 15px;
+
+  cursor: pointer;
+}

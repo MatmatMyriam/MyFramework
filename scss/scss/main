@@ -1,0 +1,12 @@
+/**
+* import des variables
+ */
+@import "variables";
+/**
+* import des fichiers scss
+ */
+@import "typographie";
+@import "table";
+@import "alert";
+@import "boutons";
+@import "navbar";

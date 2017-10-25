@@ -1,0 +1,102 @@
+@import "mixins/_boutons.scss";
+
+/*
+* le bouton par défault
+ */
+%btn {
+  @include  btn($lineHeight_btn, $padding_btn, $borderRadius_btn,$fonSize_btn,$background_btn,$color_btn,$border_btn, $background_hover_btn,$background_active_btn);
+}
+
+/**
+* La taille des bouttons
+*/
+%btn-large{
+  @include  btn(150%,2% 3%,12px,1.8rem,$background_btn,$color_btn,$border_btn, $background_hover_btn,$background_active_btn);
+}
+%btn-small{
+  @include  btn(100%,1% 1%,8px,0.8rem,$background_btn,$color_btn,$border_btn, $background_hover_btn,$background_active_btn);
+}
+/**
+* Les couleurs
+*/
+%btn-red{
+  @include  btn($lineHeight_btn, $padding_btn, $borderRadius_btn,$fonSize_btn, #B22222,$color_btn,$border_btn, #A52A2A,darkred);
+}
+
+%btn-gray{
+  @include  btn($lineHeight_btn, $padding_btn, $borderRadius_btn,$fonSize_btn, gray,$color_btn,$border_btn, slategray,darkslategray);
+
+}
+
+%btn-purple {
+  @include btn($lineHeight_btn, $padding_btn, $borderRadius_btn, $fonSize_btn, mediumpurple, $color_btn, $border_btn, rebeccapurple, purple);
+
+}
+/**
+* L'apparence des boutons
+*/
+%btn-fancy {
+  @include btn($lineHeight_btn, $padding_btn, 17px, 20px, $background_btn, $color_btn, solid #743f8a 1px,$background_hover_btn, $background_active_btn);
+
+  background: #d134d9;
+  background-image: -webkit-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: -moz-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: -ms-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: -o-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: linear-gradient(to bottom, #d134d9, #2b4eb8);
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+;
+  -webkit-box-shadow: 4px 3px 11px #ad8aad;
+  -moz-box-shadow: 4px 3px 11px #ad8aad;
+  box-shadow: 4px 3px 11px #ad8aad;
+  font-family: Georgia;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+  &:hover {
+    background: #fc3cf6;
+    background-image: -webkit-linear-gradient(top, #fc3cf6, #3498db);
+    background-image: -moz-linear-gradient(top, #fc3cf6, #3498db);
+    background-image: -ms-linear-gradient(top, #fc3cf6, #3498db);
+    background-image: -o-linear-gradient(top, #fc3cf6, #3498db);
+    background-image: linear-gradient(to bottom, #fc3cf6, #3498db);
+    text-decoration: none;
+
+  }
+
+  &:active {
+    background: #fff;
+    background-image: url("./image/University.png");
+    background-repeat:no-repeat ;
+    text-decoration: none;
+    background-position: left;
+  }
+  &:active > span{
+    margin-left: 20px;
+    color: black;
+  }
+}
+
+
+%btn-flat {
+  @include btn($lineHeight_btn, $padding_btn, 0, 20px,$background_btn,#ffffff,none, #9e5151, #9e5151);
+  -webkit-box-shadow: 4px 3px 11px #ad8aad;
+  -moz-box-shadow: 4px 3px 11px #ad8aad;
+  box-shadow: 4px 3px 11px #ad8aad;
+  font-family: Georgia;
+  background: #a88484;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+
+%btn-extra-large{
+  @include btn($lineHeight_btn, $padding_btn, $borderRadius_btn, $fonSize_btn,$background_btn,$color_btn,$border_btn, $background_hover_btn, $background_active_btn);
+
+    width: 95%;
+  margin: 1% 1%;
+  font-size: 1.8rem;
+
+}

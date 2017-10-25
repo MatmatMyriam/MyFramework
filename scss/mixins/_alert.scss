@@ -1,0 +1,13 @@
+@mixin alert($margin_alert,$color_alert,$borderRadius_alert,$background_alert,$boxShadow_alert,$backgroundHover_alert){
+
+  width: 100%;
+  margin: $margin_alert;
+  padding: 20px;
+  color: $color_alert;
+  border-radius: $borderRadius_alert;
+  background-color: $background_alert;
+  box-shadow: $boxShadow_alert;
+  &:hover {
+    background-color: $backgroundHover_alert;
+  }
+}

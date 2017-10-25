@@ -1,0 +1,243 @@
+@import "../scss/mixins/table.scss";
+@import "../scss/scss/typographie.scss";
+@import "../scss/mixins/boutons.scss";
+@import "../scss/mixins/alert.scss";
+@import "../scss/mixins/navbar.scss";
+
+//Typographie
+p{
+ @extend p;
+}
+
+hr{
+  @extend %hr;
+}
+h1{
+  @extend %h1;
+
+}
+h2{
+  @extend %h2;
+}
+
+h3 {
+ @extend %h3;
+}
+
+h4 {
+  @extend %h4;
+}
+
+h5 {
+  @extend %h5;
+}
+
+h6 {
+  @extend %h6;
+}
+/**
+*Blokcode & quote
+*/
+blockquote {
+  @extend %blockquote;
+
+  &:before{
+    color: darkgray;
+  }
+}
+/*
+* balises de texte inline
+*/
+b {
+  @extend %b;
+}
+strong{
+  @extend %strong;
+}
+del {
+  @extend %del;
+}
+
+u {
+  @extend %u;
+}
+ins{
+  @extend %ins;
+}
+small{
+  @extend %small;
+}
+pre{
+  @extend %pre;
+}
+em {
+  @extend %em;
+}
+i{
+    @extend %i;
+  }
+
+  abbr {
+    @extend %abbr;
+
+    &[title] {
+      cursor: help; }
+  }
+
+
+  cursor-abbr{
+    @extend %cursor-abbr;
+  }
+  a:hover{
+    @extend %a:hover;
+  }
+
+  /*
+  * Allignement et transformation de texte
+  */
+  align-left{
+    @extend %align-left;
+  }
+  align-right{
+    @extend %align-right;
+  }
+  align-center{
+    @extend %align-center;
+  }
+  align-justify{
+    @extend %align-justify;
+  }
+  align-start{
+    @extend %align-start;
+  }
+  align-end{
+    @extend %align-end;
+  }
+  uppercase-text{
+    @extend %uppercase-text;
+  }
+  lowercase-text{
+    @extend %lowercase-text;
+  }
+  /*
+  * Liste
+  */
+  ul {
+    @extend %ul;
+    > %li {
+      display: list-item;
+    }
+    &circle {
+      list-style: circle;
+    }
+    &nothing {
+      list-style: none;
+    }
+    &square {
+      list-style: square;
+    }
+  }
+  //Tables
+  .table{
+    @include table(1.4px solid gray,purple,#04313d,#fff,2.8px solid #485c80,2.8px solid #485c80,2.8px solid #485c80,2.8px solid #485c80 , pink);
+  }
+
+  .caption{
+    @include caption(gray, 1.8em);
+  }
+
+/**
+* Les boutons
+ */
+
+.btn{
+  @include  btn(130%,1% 2%, 10px,1.2rem,#0080D0,#fff,1px solid #067790,#0050D0,#0020D0);
+}
+
+/**
+* La taille des bouttons
+*/
+.btn-large{
+  @include  btn(150%,2% 3%,12px,1.8rem,#0080D0,#fff,1px solid #067790,#0050D0,#0020D0);
+}
+.btn-small{
+  @include  btn(100%,1% 1%,8px,0.8rem,#0080D0,#fff,1px solid #067790,#0050D0,#0020D0);
+}
+/**
+* Les couleurs
+*/
+.btn-red{
+  @include  btn(130%, 1% 2%, 10px,1.2rem, #B22222,#fff,1px solid #067790, #A52A2A,darkred);
+}
+
+.btn-gray{
+  @include  btn(130%, 1% 2%, 10px,1.2rem, gray,#fff,1px solid #067790, slategray,darkslategray);
+
+}
+
+.btn-purple {
+  @include btn(130%, 1% 2%, 10px,1.2rem, mediumpurple, #fff,1px solid #067790, rebeccapurple, purple);
+
+}
+/**
+* L'apparence des boutons
+*/
+.btn-fancy {
+  @include btn(130%, 1% 2%, 17px, 20px, #fff,1px solid #067790, solid #743f8a 1px,#fc3cf6, #fff);
+
+  background: #d134d9;
+  background-image: -webkit-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: -moz-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: -ms-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: -o-linear-gradient(top, #d134d9, #2b4eb8);
+  background-image: linear-gradient(to bottom, #d134d9, #2b4eb8);
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+;
+  -webkit-box-shadow: 4px 3px 11px #ad8aad;
+  -moz-box-shadow: 4px 3px 11px #ad8aad;
+  box-shadow: 4px 3px 11px #ad8aad;
+  font-family: Georgia;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+}
+
+.btn-flat {
+  @include btn(130%, 1% 2%, 0, 20px, #a88484,#ffffff,none, #9e5151, #9e5151);
+  -webkit-box-shadow: 4px 3px 11px #ad8aad;
+  -moz-box-shadow: 4px 3px 11px #ad8aad;
+  box-shadow: 4px 3px 11px #ad8aad;
+  font-family: Georgia;
+  background: #a88484;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn-extra-large{
+  @include  btn(150%,2% 3%,12px,1.8rem,#0080D0,#fff,1px solid #067790,#0050D0,#0020D0);
+  width: 95%;
+  margin: 1% 1%;
+  font-size: 1.8rem;
+}
+/**
+*Les alertes
+ */
+.alert{
+  @include alert(2% 1%, #fff,4px, #067790,2px 5px rgba(0, 0, 0, 0.2),#056378)
+}
+.alert_danger{
+  @include alert(2% 1%, #fff,4px, #f44336,2px 5px rgba(0, 0, 0, 0.2),#f32c1e)
+}
+.alert_success{
+  @include alert(2% 1%, #fff,4px, #006700,2px 5px rgba(0, 0, 0, 0.2),#004e00)
+}
+.alert_warning{
+  @include alert(2% 1%, #fff,4px, orangered,2px 5px rgba(0, 0, 0, 0.2),#e63e00)
+}
+/**
+*La navbar
+ */
+.navbar{
+  @include navbar(90%,0 5%,skyblue, #e4edff,darkslategray,#084f61,white,#e4edff);
+}
