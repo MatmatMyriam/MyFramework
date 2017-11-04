@@ -1,0 +1,5 @@
+@import "mixins/_filAriane.scss";
+
+%filAriane{
+  @include filArianne($colorLi_ariane,$colorActive_fil,$backColorActiveAfter_fil,$backColorActiveBefore_fil);
+}

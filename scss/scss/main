@@ -11,3 +11,4 @@
 @import "boutons";
 @import "navbar";
 @import "grille";
+@import "pagination";

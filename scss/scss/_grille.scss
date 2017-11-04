@@ -41,3 +41,14 @@
 %column-12 {
   @include grilleCol($gridColumns,12, $gutter);
 }
+@for $i from 1 to $gridColumns {
+  %col-#$i{
+  @include grilleCol($gridColumns,$i, $gutter);
+}
+}
+
+@for $i from 1 to $gridColumns {
+  .offset-#$i{
+  @include offset($i,$gridColumns);
+}
+}

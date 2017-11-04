@@ -1,0 +1,5 @@
+@import "mixins/_pagination.scss";
+
+%pagination{
+  @include pagination($colorA_pagination, $paddingPagination,$colorBorder_pagination,$backgroundColor_pagActive, $color_pagActive,$hover_pag);
+}

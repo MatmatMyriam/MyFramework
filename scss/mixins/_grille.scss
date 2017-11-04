@@ -21,9 +21,10 @@
   margin-bottom:($gutter)*1% ;
   margin-top:($gutter)*1% ;
   background-color: #b3cce6;
-  @for $i from 1 through $nbColumn {
-    .offset-#{$i} {
-      margin-left: calc(100% * 1 / #{$nbColumn} * #{$i} + #{$gutter});
-    }
-  }
+
 }
+
+@mixin offset($nbColumn,$gridColumns){
+  margin-left: (100 / $gridColumns * $nbColumn ) * 1%;
+}
+

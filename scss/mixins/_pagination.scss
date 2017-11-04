@@ -1,0 +1,24 @@
+@mixin pagination($colorA_pagination, $paddingPagination,$colorBorder_pagination,$backgroundColor_pagActive, $color_pagActive,$hover_pag){
+  display: inline-block;
+  width: 100%;
+  & a{
+    color: $colorA_pagination;
+    float: left;
+    padding: $paddingPagination;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: $colorBorder_pagination;
+    font-size: 15px;
+
+
+    &.active{
+      background-color:$backgroundColor_pagActive;
+      color: $color_pagActive;
+      border: 1px solid #4CAF50;
+    }
+    &:hover:not(.active){
+      background-color: $hover_pag;
+    }
+  }
+}
+

@@ -67,3 +67,22 @@ $activeA:#084f61;
 $gutter: 2 !default; ;
 $gridColumns: 12 !default;
 $nbColumn:12 !default ;
+
+/*
+* La pagination
+ */
+$colorA_pagination: black;
+$paddingPagination:8px 16px;
+$colorBorder_pagination:1px solid #d9e6f2;
+$backgroundColor_pagActive:#b3cce6;
+$color_pagActive:white;
+$hover_pag: #d9e6f2;
+
+/*
+*Fil d'Ariane
+ */
+
+$colorLi_ariane:#8b9ab0;
+$colorActive_fil:#82bea5;
+$backColorActiveAfter_fil:#23cf5f ;
+$backColorActiveBefore_fil: #23cf5f;

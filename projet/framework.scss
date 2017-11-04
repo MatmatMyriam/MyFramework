@@ -4,6 +4,9 @@
 @import "../scss/mixins/alert.scss";
 @import "../scss/mixins/navbar.scss";
 @import "../scss/mixins/grille.scss";
+@import "../scss/mixins/pagination.scss";
+@import "../scss/mixins/filAriane.scss";
+
 //Typographie
 p{
  @extend p;
@@ -284,6 +287,54 @@ i{
 .col-11{
   @include grilleCol(12,11, 2);
 }
-.col-12{
-  @include grilleCol(12,12, 2);
+.col-12 {
+  @include grilleCol(12, 12, 2);
+}
+.offset-1{
+  @include offset(1,12);
+}
+.offset-2{
+    @include offset(2,12); }
+.offset-3{
+  @include offset(3,12);
+}
+.offset-4{
+  @include offset(4,12);
+}
+.offset-5{
+  @include offset(5,12);
+}
+.offset-6{
+  @include offset(6,12);
+}
+.offset-7{
+  @include offset(7,12);
+}
+.offset-8{
+  @include offset(8,12);
+}
+.offset-9{
+  @include offset(9,12);
+}
+.offset-10{
+  @include offset(10,12);
+}
+.offset-11{
+  @include offset(11,12);
+}
+.offset-12{
+  @include offset(12,12);
+}
+
+/*
+* La pagination
+*/
+.pagination{
+  @include pagination(black,2% 2%,1px solid #d9e6f2,#b3cce6,white,#d9e6f2)
+}
+/*
+* Le fil d'ariane
+ */
+.filAriane{
+  @include filAriane(#8b9ab0,#b3cce6,#d9e6f2,#d9e6f2);
 }
