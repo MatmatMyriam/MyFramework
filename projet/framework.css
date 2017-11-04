@@ -519,7 +519,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-2 {
   width: 14.6666666667%;
@@ -530,7 +531,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-3 {
   width: 23%;
@@ -541,7 +543,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-4 {
   width: 31.3333333333%;
@@ -552,7 +555,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-5 {
   width: 39.6666666667%;
@@ -563,7 +567,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-6 {
   width: 48%;
@@ -574,7 +579,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-7 {
   width: 56.3333333333%;
@@ -585,7 +591,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-8 {
   width: 64.6666666667%;
@@ -596,7 +603,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-9 {
   width: 73%;
@@ -607,7 +615,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-10 {
   width: 81.3333333333%;
@@ -618,7 +627,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-11 {
   width: 89.6666666667%;
@@ -629,7 +639,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .col-12 {
   width: 98%;
@@ -640,7 +651,8 @@ ul.square {
   margin-right: 1%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background-color: #b3cce6; }
+  background-color: #b3cce6;
+  overflow: hidden; }
 
 .offset-1 {
   margin-left: 8.3333333333%; }
