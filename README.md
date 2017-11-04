@@ -41,6 +41,13 @@ Now, you can create your own class in your .scss
 ```
 Compile and link with you code html
 ```
+If you want see the page with all exemple, you must do this:
+```
+Clone my repository also
+```
+```
+And start htmlFramework.html in project directory
+```
 
 ### Prerequisites
 
@@ -60,6 +67,6 @@ sudo gem install sass --no-user-install
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License .
 
 Thanks for you reading !
