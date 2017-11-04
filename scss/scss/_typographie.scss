@@ -1,4 +1,4 @@
-$color_title : black §default;
+$color_title : black !default;
 $fontfamily_title :'Helvetica', sans-serif;
 $fontfamily_pre: 'Arial';
 $style_quote:italic;
@@ -115,9 +115,11 @@ p{
 %cursor-abbr{
   cursor: help;
 }
-%a:hover{
+%a{
+  cursor: pointer;
+  &:hover{
   color:#606c76;
-  text-decoration:none;
+  text-decoration:none;}
 }
 
 /*

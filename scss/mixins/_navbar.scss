@@ -1,4 +1,4 @@
-@mixin navbar($width_navbar,$margin_navbar,$backgroung_navbar,$hoverLi_navbar,$disableLi_navebar, $backgroundActive_navbar,$colorA_navbar,$hoverA_navbar){
+@mixin navbar($width_navbar,$margin_navbar,$backgroung_navbar,$hoverLi_navbar,$disableLi_navebar, $backgroundActive_navbar,$colorA_navbar,$hoverA_navbar,$disableA,$activeA){
   width: $width_navbar;
   margin: $margin_navbar;
   padding-left: 0;
@@ -25,9 +25,12 @@
 
     &.disable{
       background-color: $disableLi_navebar;
-    }
+     }
     &.active {
-      background-color: $backgroundActive_navbar; }
+      background-color: $backgroundActive_navbar;
+    }
+    }
+
     & a{
       display: block;
       width: 100%;
@@ -42,7 +45,10 @@
       }
       &.disable{
         cursor: not-allowed;
+        background-color:$disableA;
       }
+      &.active{
+        background-color:$activeA ;
     }
   }
 }

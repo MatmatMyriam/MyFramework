@@ -1,6 +1,6 @@
 @import "mixins/_navbar.scss";
 
 navbar{
-  @include navbar($width_navbar,$margin_navbar,$backgroung_navbar,$hoverLi_navbar,$disableLi_navebar, $backgroundActive_navbar,$colorA_navbar,$hoverA_navbar);
+  @include navbar($width_navbar,$margin_navbar,$backgroung_navbar,$hoverLi_navbar,$disableLi_navebar, $backgroundActive_navbar,$colorA_navbar,$hoverA_navbar,$disableA,$activeA);
 
   }

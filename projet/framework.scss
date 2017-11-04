@@ -3,7 +3,7 @@
 @import "../scss/mixins/boutons.scss";
 @import "../scss/mixins/alert.scss";
 @import "../scss/mixins/navbar.scss";
-
+@import "../scss/mixins/grille.scss";
 //Typographie
 p{
  @extend p;
@@ -85,38 +85,42 @@ i{
   }
 
 
-  cursor-abbr{
+  .cursor-abbr{
     @extend %cursor-abbr;
   }
-  a:hover{
-    @extend %a:hover;
+  a{
+    @extend %a;
+    &:hover{
+      @extend %a:hover;
+    }
   }
+
 
   /*
   * Allignement et transformation de texte
   */
-  align-left{
+  .align-left{
     @extend %align-left;
   }
-  align-right{
+  .align-right{
     @extend %align-right;
   }
-  align-center{
+  .align-center{
     @extend %align-center;
   }
-  align-justify{
+  .align-justify{
     @extend %align-justify;
   }
-  align-start{
+  .align-start{
     @extend %align-start;
   }
-  align-end{
+  .align-end{
     @extend %align-end;
   }
-  uppercase-text{
+  .uppercase-text{
     @extend %uppercase-text;
   }
-  lowercase-text{
+  .lowercase-text{
     @extend %lowercase-text;
   }
   /*
@@ -127,13 +131,13 @@ i{
     > %li {
       display: list-item;
     }
-    &circle {
+    &.circle {
       list-style: circle;
     }
-    &nothing {
+    &.nothing {
       list-style: none;
     }
-    &square {
+    &.square {
       list-style: square;
     }
   }
@@ -239,5 +243,47 @@ i{
 *La navbar
  */
 .navbar{
-  @include navbar(90%,0 5%,skyblue, #e4edff,darkslategray,#084f61,white,#e4edff);
+  @include navbar(90%,0 5%,skyblue, #e4edff,darkslategray,#084f61,white,#e4edf,#e4edff,darkslategray);
+}
+/**
+*la grille
+ */
+.container{
+  @include container(12,2);
+}
+.col-1{
+  @include grilleCol(12,1, 2);
+}
+.col-2{
+  @include grilleCol(12,2, 2);
+}
+.col-3{
+  @include grilleCol(12,3, 2);
+}
+.col-4{
+  @include grilleCol(12,4, 2);
+}
+.col-5{
+  @include grilleCol(12,5, 2);
+}
+.col-6{
+  @include grilleCol(12,6, 2);
+}
+.col-7{
+  @include grilleCol(12,7, 2);
+}
+.col-8{
+  @include grilleCol(12,8, 2);
+}
+.col-9{
+  @include grilleCol(12,9, 2);
+}
+.col-10{
+  @include grilleCol(12,10, 2);
+}
+.col-11{
+  @include grilleCol(12,11, 2);
+}
+.col-12{
+  @include grilleCol(12,12, 2);
 }

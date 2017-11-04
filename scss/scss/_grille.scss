@@ -1,0 +1,43 @@
+@import "mixins/_grille.scss";
+
+%container {
+  @include container($gutter, $gridColumns);
+
+
+}
+%column-1 {
+  @include grilleCol($gridColumns,1, $gutter);
+}
+%column-2 {
+  @include grilleCol($gridColumns,2, $gutter);
+}
+%column-3 {
+  @include grilleCol($gridColumns,3, $gutter);
+}
+%column-4 {
+  @include grilleCol($gridColumns,4, $gutter);
+}
+%column-5 {
+  @include grilleCol($gridColumns,5, $gutter);
+}
+%column-6 {
+  @include grilleCol($gridColumns,6, $gutter);
+}
+%column-7 {
+  @include grilleCol($gridColumns,7, $gutter);
+}
+%column-8 {
+  @include grilleCol($gridColumns,8, $gutter);
+}
+%column-9 {
+  @include grilleCol($gridColumns,9, $gutter);
+}
+%column-10 {
+  @include grilleCol($gridColumns,10, $gutter);
+}
+%column-11 {
+  @include grilleCol($gridColumns,11, $gutter);
+}
+%column-12 {
+  @include grilleCol($gridColumns,12, $gutter);
+}
